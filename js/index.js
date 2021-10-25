@@ -13,5 +13,17 @@ const boxes = document.querySelector('.boxes');
 
 for (let i = 1; i <= 100; i++) {
     boxes.innerHTML += `<div class="box box-${i}">${i}</div>`;
-}
 
+    //detect values divisble by 3 and 5
+    if(i % 3 === 0 && i % 5 === 0) {
+        boxes.innerHTML += `<div class="box box-divisible_3_5">fizzbuzz</div>`
+    }
+    //detect values divisible by 3
+    else if(i % 3 === 0) {
+        boxes.innerHTML += `<div class="box box-divisible_3">fizz</div>`
+    }
+    //detect values divisible by 5
+    else if(i % 5 === 0) {
+        boxes.innerHTML += `<div class="box box-divisible_5">buzz</div>`
+    }
+}
