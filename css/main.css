@@ -30,3 +30,15 @@ h1 {
     background-color: #1389B2;
     color: black;
 }
+
+.boxes .box-divisible_3_5 {
+    background-color: #F0466F;
+}
+
+.boxes .box-divisible_3 {
+    background-color: #0BD6A1;
+}
+
+.boxes .box-divisible_5 {
+    background-color: #FFD166;
+}

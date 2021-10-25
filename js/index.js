@@ -12,7 +12,6 @@ Consigli del giorno:
 const boxes = document.querySelector('.boxes');
 
 for (let i = 1; i <= 100; i++) {
-    boxes.innerHTML += `<div class="box box-${i}">${i}</div>`;
 
     //detect values divisble by 3 and 5
     if(i % 3 === 0 && i % 5 === 0) {
@@ -25,5 +24,8 @@ for (let i = 1; i <= 100; i++) {
     //detect values divisible by 5
     else if(i % 5 === 0) {
         boxes.innerHTML += `<div class="box box-divisible_5">buzz</div>`
+    }
+    else {
+        boxes.innerHTML += `<div class="box box-${i}">${i}</div>`;
     }
 }
