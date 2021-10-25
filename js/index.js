@@ -9,3 +9,9 @@ Consigli del giorno:
 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
  */
 
+const boxes = document.querySelector('.boxes');
+
+for (let i = 1; i <= 100; i++) {
+    boxes.innerHTML += `<div class="box box-${i}">${i}</div>`;
+}
+

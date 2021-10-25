@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #083B4C;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+.boxes {
+    margin: 50px auto;
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 116px;
+    margin: 1rem;
+    background-color: #1389B2;
+    color: black;
+}
